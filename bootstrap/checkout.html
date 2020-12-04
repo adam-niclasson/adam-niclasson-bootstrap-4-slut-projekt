@@ -62,7 +62,63 @@
         </div>
       </div>
     </nav>
-    <h1>PAY HERE!</h1>
+    <main
+      class="d-flex justify-content-between align-items-center mb-3 pl-3 text-light"
+      width="500px"
+      style="
+        background-image: url('./css/space.jpg');
+        background-repeat: no-repeat;
+        height: 650px;
+      "
+    >
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="cc-name">Kort namn</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cc-name"
+            placeholder=""
+            required
+          />
+          <small class="text-muted">Fulla namnet som anges på kortet</small>
+          <div class="invalid-feedback">Namn påkortet är obligatoriskt*</div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="cc-number">Kortnummret</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cc-number"
+            placeholder=""
+            required
+          />
+          <div class="invalid-feedback">Kortnummret måste fyllas i!</div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="cc-expiration">Utgång</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cc-expiration"
+            placeholder=""
+            required
+          />
+          <div class="invalid-feedback">Utgång är obligatorisk*</div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="cc-cvv">CVV</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cc-cvv"
+            placeholder=""
+            required
+          />
+          <div class="invalid-feedback">CVV nummer är obligatoriskt*</div>
+        </div>
+      </div>
+    </main>
     <footer
       class="my-5 pt-5 mb-5 pb-5 text-muted text-center text-small bg-dark"
     >
